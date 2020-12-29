@@ -21,18 +21,12 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": [
-    "@typescript-eslint",
-    "import",
-    "jsx-a11y",
-    "react",
-    "react-hooks",
-    "prettier"
-  ],
+  "plugins": ["@typescript-eslint", "import", "jsx-a11y", "react", "react-hooks", "prettier"],
   "root": true,
   "rules": {
     // ignore airbnb's rule
     "react/require-default-props": "off",
+    "react/jsx-one-expression-per-line": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -56,15 +50,10 @@
     "react/jsx-filename-extension": [
       "error",
       {
-        "extensions": [
-          ".jsx",
-          ".tsx"
-        ]
+        "extensions": [".jsx", ".tsx"]
       }
     ],
-    "@typescript-eslint/no-use-before-define": [
-      "error"
-    ]
+    "@typescript-eslint/no-use-before-define": ["error"]
   },
   "settings": {
     "react": {
@@ -72,12 +61,7 @@
     },
     "import/resolver": {
       "node": {
-        "extensions": [
-          ".js",
-          ".jsx",
-          ".ts",
-          ".tsx"
-        ]
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
     }
   }
