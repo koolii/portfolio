@@ -23,14 +23,13 @@ const IndexPage: React.FC = () => {
     () => [
       {
         lang: 'JavaScript',
-        techs: ['React'],
+        techs: ['React', 'Express', 'koa', 'Vue', 'Angular', 'TypeScript', 'Puppeteer'],
         description: [
           '使用歴2.5年程、主にNode.jsを使ったAPIの開発や、バッチ処理等での経験が多い。',
           '大規模配信システムでは、WebSocketを使ったイベント起点のAPI作成やフロントの開発。',
           'AngularJS等のSPAに関しても仕事内外での経験。',
           '個人的なプロジェクトでjQUeryやTypeScriptでスクリプト等を作成。',
           '大学の研究では、WebRTCの技術を使ったWEBアプリケーションを作成。',
-          '(Express,koa,React,Vue,Angular,TypeScript,Puppeteer)',
         ],
         years: 0.5,
         rank: 0,
