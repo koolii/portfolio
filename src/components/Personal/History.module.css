@@ -1,0 +1,10 @@
+.container {
+  align-items: center;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  line-height: 25px;
+  min-height: 25vh;
+}

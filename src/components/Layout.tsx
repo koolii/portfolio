@@ -4,7 +4,6 @@ import Head from 'next/head';
 
 type Props = {
   children: ReactNode;
-  // eslint-disable-next-line react/require-default-props
   title?: string;
 };
 
@@ -17,8 +16,8 @@ const Layout: React.FC<Props> = ({ children, title = 'This is the default title'
     </Head>
     <header>
       <nav>
-        <Link href="/">Home</Link> | <Link href="/about">About</Link> | <Link href="/users">Users List</Link> |{' '}
-        <a href="/api/users">Users API</a>
+        <Link href="/">Home</Link> | <Link href="/about">About</Link> |{' '}
+        <Link href="/users">Users List</Link> | <a href="/api/users">Users API</a>
       </nav>
     </header>
     {children}

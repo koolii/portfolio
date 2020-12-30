@@ -4,7 +4,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "next -p 4202",
-    "build": "next build",
+    "build:origin": "next build",
+    "build": "next export -o dist",
     "start": "next start",
     "type-check": "tsc",
     "lint": "eslint . --ext .ts,.tsx",

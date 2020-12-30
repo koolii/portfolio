@@ -1,0 +1,16 @@
+.navigationb {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  margin: 20px auto;
+  padding-inline-start: 0;
+}
+
+.navigationb li {
+  border: 3px solid white;
+  border-radius: 3px;
+  color: #f5f5f5;
+  margin: 10px;
+  padding: 10px;
+}

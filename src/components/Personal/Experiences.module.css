@@ -1,0 +1,19 @@
+.skill {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 50vh;
+  padding: 20px;
+}
+
+.skillDiv {
+  color: #000000;
+}
+
+.inner {
+  margin: 20px auto;
+  text-align: center;
+  width: 70%;
+}

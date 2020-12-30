@@ -25,6 +25,7 @@
   "root": true,
   "rules": {
     // ignore airbnb's rule
+    "react/prop-types": "off",
     "react/require-default-props": "off",
     "react/jsx-one-expression-per-line": "off",
     "import/extensions": [
