@@ -3,10 +3,10 @@ import React, { useMemo } from 'react';
 // import Layout from '../src/components/Layout';
 import Header from '../src/components/Personal/Header';
 import Introduction from '../src/components/Personal/Introduction';
-import History from '../src/components/Personal/History';
+import Histories from '../src/components/Personal/Histories';
 import Experiences from '../src/components/Personal/Experiences';
 import Footer from '../src/components/Personal/Footer';
-import { Experience, SNS } from '../src/interfaces/types';
+import { Experience, History, SNS } from '../src/interfaces/types';
 
 // <Layout title="Home | Next.js + TypeScript Example" />
 const IndexPage: React.FC = () => {
@@ -91,6 +91,34 @@ const IndexPage: React.FC = () => {
     [],
   );
 
+  const histories: History[] = useMemo(
+    () => [
+      {
+        yearFrom: 2011,
+        description: ['会津大学に入学、プログラマーのアルバイトを始める'],
+      },
+      {
+        yearFrom: 2015,
+        description: ['同大学を卒業し、アルバイト先に入社'],
+      },
+      {
+        yearFrom: 2016,
+        yearTo: 2017,
+        description: ['エアークロゼットに中途入社'],
+      },
+      {
+        yearFrom: 2017,
+        yearTo: 2019,
+        description: ['オランダへ移住し、WEB・インフラエンジニアとして従事'],
+      },
+      {
+        yearFrom: 2020,
+        description: ['日本に帰国しフリーランスエンジニアとして活動を開始'],
+      },
+    ],
+    [],
+  );
+
   return (
     <>
       {/* <p>
@@ -98,7 +126,7 @@ const IndexPage: React.FC = () => {
     </p> */}
       <Header sns={sns} />
       <Introduction />
-      <History />
+      <Histories histories={histories} />
       <Experiences experiences={experiences} />
       <Footer sns={sns} />
     </>

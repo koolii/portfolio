@@ -4,6 +4,12 @@ export interface SNS {
   url: string;
 }
 
+export interface History {
+  yearFrom: number;
+  yearTo?: number;
+  description: string[];
+}
+
 export interface Experience {
   lang: string;
   techs: string[];
