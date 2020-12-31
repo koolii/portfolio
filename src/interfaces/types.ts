@@ -5,12 +5,14 @@ export interface SNS {
 }
 
 export interface History {
+  id: number;
   yearFrom: number;
   yearTo?: number;
   description: string[];
 }
 
 export interface Experience {
+  id: number;
   lang: string;
   techs: string[];
   description: string[];

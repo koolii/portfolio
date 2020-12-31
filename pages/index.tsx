@@ -1,6 +1,4 @@
 import React, { useMemo } from 'react';
-// import Link from 'next/link';
-// import Layout from '../src/components/Layout';
 import Header from '../src/components/Personal/Header';
 import Introduction from '../src/components/Personal/Introduction';
 import Histories from '../src/components/Personal/Histories';
@@ -8,7 +6,6 @@ import Experiences from '../src/components/Personal/Experiences';
 import Footer from '../src/components/Personal/Footer';
 import { Experience, History, SNS } from '../src/interfaces/types';
 
-// <Layout title="Home | Next.js + TypeScript Example" />
 const IndexPage: React.FC = () => {
   const sns: SNS[] = useMemo(
     () => [
@@ -22,6 +19,7 @@ const IndexPage: React.FC = () => {
   const experiences: Experience[] = useMemo(
     () => [
       {
+        id: 1,
         lang: 'JavaScript',
         techs: ['React', 'Express', 'koa', 'Vue', 'Angular', 'TypeScript', 'Puppeteer'],
         description: [
@@ -35,6 +33,7 @@ const IndexPage: React.FC = () => {
         rank: 0,
       },
       {
+        id: 2,
         lang: 'Python(&gt; version 3)',
         techs: ['Mecab'],
         description: [
@@ -46,6 +45,7 @@ const IndexPage: React.FC = () => {
         rank: 0,
       },
       {
+        id: 3,
         lang: 'Java',
         techs: ['Spring', 'Struts', 'Android Java', 'jsp', 'tomcat'],
         description: [
@@ -57,6 +57,7 @@ const IndexPage: React.FC = () => {
         rank: 0,
       },
       {
+        id: 4,
         lang: 'C#',
         techs: ['Entity Framework'],
         description: [
@@ -68,6 +69,7 @@ const IndexPage: React.FC = () => {
         rank: 0,
       },
       {
+        id: 5,
         lang: 'PHP',
         techs: [],
         description: [
@@ -78,6 +80,7 @@ const IndexPage: React.FC = () => {
         rank: 0,
       },
       {
+        id: 6,
         lang: 'Infrastructure',
         techs: ['On-premise', 'Ansible', 'Docker', 'AWS'],
         description: [
@@ -94,24 +97,29 @@ const IndexPage: React.FC = () => {
   const histories: History[] = useMemo(
     () => [
       {
+        id: 1,
         yearFrom: 2011,
         description: ['会津大学に入学、プログラマーのアルバイトを始める'],
       },
       {
+        id: 2,
         yearFrom: 2015,
         description: ['同大学を卒業し、アルバイト先に入社'],
       },
       {
+        id: 3,
         yearFrom: 2016,
         yearTo: 2017,
         description: ['エアークロゼットに中途入社'],
       },
       {
+        id: 4,
         yearFrom: 2017,
         yearTo: 2019,
         description: ['オランダへ移住し、WEB・インフラエンジニアとして従事'],
       },
       {
+        id: 5,
         yearFrom: 2020,
         description: ['日本に帰国しフリーランスエンジニアとして活動を開始'],
       },
@@ -121,9 +129,6 @@ const IndexPage: React.FC = () => {
 
   return (
     <>
-      {/* <p>
-      <Link href="/about">About</Link>
-    </p> */}
       <Header sns={sns} />
       <Introduction />
       <Histories histories={histories} />

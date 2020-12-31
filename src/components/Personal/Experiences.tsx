@@ -10,12 +10,12 @@ const Experiences: React.FC<Props> = ({ experiences }) => (
   <section className={styles.skill}>
     <h2>Experiences</h2>
     {experiences.map((p) => (
-      <div className={styles.skillDiv}>
+      <div key={p.id} className={styles.skillDiv}>
         <div className={styles.inner}>
           <h3>{p.lang}</h3>
           <div>
             {p.description.map((s) => (
-              <span>{s}</span>
+              <span key={s}>{s}</span>
             ))}
           </div>
         </div>
